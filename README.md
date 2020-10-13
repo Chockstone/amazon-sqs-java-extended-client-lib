@@ -1,3 +1,5 @@
+(Forked because failure semantics need tweaking. Specifically if we retrieve a message but can't get the s3 payload, return the messageID to the caller.)
+
 Amazon SQS Extended Client Library for Java
 ===========================================
 The **Amazon SQS Extended Client Library for Java** enables you to manage Amazon SQS message payloads with Amazon S3. This is especially useful for storing and retrieving messages with a message payload size greater than the current SQS limit of 256 KB, up to a maximum of 2 GB. Specifically, you can use this library to:
